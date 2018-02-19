@@ -7,17 +7,17 @@
     tools:context="com.example.pargibaycalvo.animationkotlin.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAnimacion"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="100dp"
-        android:text="Button"
+        android:text="GO!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageDomotta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"

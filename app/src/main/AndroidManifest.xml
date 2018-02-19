@@ -18,7 +18,11 @@
         </activity>
         <activity
             android:name=".Main2ActivityNavigation"
-            android:label="@string/title_activity_main2_navigation"></activity>
+            android:label="@string/title_activity_main2_navigation" />
+        <activity
+            android:name=".Mensaje"
+            android:label="@string/title_activity_mensaje"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
