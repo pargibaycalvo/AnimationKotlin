@@ -11,32 +11,43 @@
         android:id="@+id/textDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:drawableTop="@drawable/ic_dashboard_black_24dp"
         android:gravity="center_horizontal"
         android:text="Dashboard"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRead"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="262dp"
-        tools:layout_conversion_absoluteWidth="1dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_conversion_absoluteWidth="1dp" />
 
     <EditText
         android:id="@+id/editDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:hint="Introduzca la clave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDashboard"
-        app:layout_constraintVertical_bias="0.808"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRead"
         tools:layout_conversion_absoluteHeight="46dp"
         tools:layout_conversion_absoluteWidth="161dp" />
+
+    <Button
+        android:id="@+id/buttonRead"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="Escribir"
+        app:layout_constraintBottom_toTopOf="@+id/editDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDashboard" />
 
 </android.support.constraint.ConstraintLayout>

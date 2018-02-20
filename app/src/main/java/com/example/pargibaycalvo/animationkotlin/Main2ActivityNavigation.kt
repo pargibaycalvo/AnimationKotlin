@@ -5,6 +5,8 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main2_navigation.*
+import kotlinx.android.synthetic.main.fragment_blank_fragment_dashboard.*
+import kotlinx.android.synthetic.main.fragment_blank_fragment_home.*
 
 class Main2ActivityNavigation : AppCompatActivity() {
 
@@ -18,10 +20,12 @@ class Main2ActivityNavigation : AppCompatActivity() {
             }
             R.id.navigation_dashboard -> {
                 message.setText(R.string.title_dashboard)
-                val fragment = BlankFragmentDashboard.Companion.newInstance()
+                //val fragment = BlankFragmentDashboard.Companion.newInstance()
+                val fragment = BlankFragmentDashboard() //ejercicio miercoles
                 val args = Bundle()
-                args.putString("key","Fragment Dashboard")
-                addFragment(fragment)
+                args.putString("111","Enviado desde el Activity 2") //ejercicio miercoles
+                fragment.arguments = args //ejercicio miercoles
+                addFragment(fragment) //ejercicio miercoles
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
@@ -50,5 +54,7 @@ class Main2ActivityNavigation : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         //Cargamos BlankFragmentHome
         addFragment(BlankFragmentHome.Companion.newInstance("Home"))
+
+
     }
 }

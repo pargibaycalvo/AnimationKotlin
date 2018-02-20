@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_blank_fragment_dashboard.*
+import kotlinx.android.synthetic.main.fragment_blank_fragment_home.*
 import kotlinx.coroutines.experimental.*
 import org.jetbrains.anko.toast
 import kotlin.coroutines.experimental.CoroutineContext

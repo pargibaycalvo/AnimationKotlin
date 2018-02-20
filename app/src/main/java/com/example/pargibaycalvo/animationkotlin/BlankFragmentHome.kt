@@ -13,7 +13,7 @@ import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
 
 
-/**
+/*
  * Clase Fragment Blank Home
  */
 
